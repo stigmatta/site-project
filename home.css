@@ -309,6 +309,7 @@ footer{
     .tea-buttons>.one-button{
         margin-right: 1em;
         height: 7em;
+        font-size: 0.9em;
     }
     #other-buttons>.tea-buttons>.one-button {
         width: 60%;

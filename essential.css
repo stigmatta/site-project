@@ -1,0 +1,327 @@
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: fit-content;
+}
+#current-menu-element{
+    color:rgb(221, 95, 95);
+}
+header>a>.one-elem:hover{
+    color:rgb(221, 95, 95);
+    transition: all .5s ease;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    height:fit-content;
+    padding-bottom: 5em;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: x-large;
+    align-items: center;
+    width: 100%;
+    height:6em;
+    color:white;
+    background-color: rgb(13,69,8);
+}
+#maomi-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#i-love-it{
+    letter-spacing: 0.2em;
+    font-size: 0.4em;
+    text-align: center;
+}
+#i-love-it img{
+    width:1em;
+    margin-top: 0.2em;
+    margin-right: 0.2em;
+}
+#maomi-text+a{
+    height: 30%;
+}
+a>#order-online{
+    height: 100%;
+    width: 15vw;
+    display: flex;
+    margin-left: 4em;
+    justify-content: center;
+    border: 0.2em solid white;
+    align-items: center;
+    border-radius: 5em;
+}
+a>#order-online:hover{
+    background-color: white;
+    transition: all .5s ease;
+    cursor: pointer;
+    color:rgb(190, 65, 65);
+    font-weight: bold;
+    font-size: 0.9em;
+}
+header>a>img{
+    width:2em;
+}
+footer>#footer-socials>a>img{
+    width:4em;
+}
+nav{
+    display: flex;
+    position: sticky;
+    z-index: 2;
+    top:0;
+    margin-top: 3em;
+    justify-content: space-evenly;
+    align-self: center;
+    width: 100vw;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav>a{
+    width:9em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border:0.1em solid green;
+    font-weight: bold;
+    font-size: 1.1em;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    color: green;
+    background-color: white;
+    border-radius: 1em;
+}
+nav>a:hover{
+    background-color: green;
+    color: white;
+    transition: all .5s ease;
+}
+footer{
+    height: fit-content;
+    line-height: 5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    width: 100%;
+    color:white;
+    background-color: rgb(13,69,8);
+}
+#footer-hrefs{
+    font-size: xx-large;
+}
+#footer-hrefs,#footer-rules,#footer-socials{
+    display: flex;
+    justify-content: space-evenly;
+}
+#img-and-description{
+    width:50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#item{
+    display: flex;
+    justify-content: space-between;
+}
+section>a{
+    margin-top: 3em;
+    margin-inline: 8em;
+    margin-bottom: 1em;
+    color:gray;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    width: 30%;
+    height: fit-content;
+}
+#image-cont{
+    display: flex;
+    margin-inline: 3em;
+    margin-block: 0;
+    width:100%;
+    height: 50em;
+    flex-direction: column;
+    background-image: url("KFTBundleMerch_ESSENTIAL-300x300.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+#item-name-price{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-block: 7em;
+    width: 45%;
+    font-weight: bold;
+}
+#item-name{
+    font-size: 3em;
+    width: 100%;
+}
+#item-price{
+    margin-block: 0.5em;
+    font-size:2.5em;
+}
+#in-stock{
+    margin-block: 0.5em;
+    color:rgb(137, 194, 52);
+    font-size:1.7em;
+    text-transform: uppercase;
+}
+#add-to-cart{
+    display:flex;
+    width: 100%;
+}
+button{
+    width:15em;
+    text-align: center;
+    height: 3em;
+    line-height: 3em;
+    font-size: 1.2em;
+    margin-inline: 2em;
+    background-color: rgb(206, 65, 65);
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 3em;
+}
+input[type="number"]{
+    text-align: center;
+    font-size: 2em;
+    width:3em;
+    padding-inline: 0;
+    height: 1em;
+    padding: 0.3em;
+}
+input::placeholder{
+    text-align: center;
+}
+#description-and-category{
+    width: 100%;
+    display: flex;
+}
+#description-container{
+    display: flex;
+}
+#description-container{
+    width: 100%;
+}
+#description-word{
+    font-size: 1.5em;
+    width: fit-content;
+    margin-left: 5em;
+    padding: 1em;
+    border: 1px solid;
+    border-bottom: none;
+    border-radius: 0.2em;
+    background-color: rgb(219, 205, 205);
+}
+#description{
+    margin-bottom: 3em;
+    margin-inline: 1em;
+    padding-block: 2em;
+    padding-inline: 1em;
+    color:gray;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: rgb(219, 205, 205);
+}
+#category-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8em;
+}
+#category-title{
+    font-size:2em;
+    font-weight: bold;
+    margin-block: 1em;
+}
+#category-name{
+    font-size:2em;
+    color:gray;
+}
+@media screen and (max-width:1200px){
+    a>#order-online{
+        font-size: 0.7em;
+        height: 80%;
+    }
+    a>#order-online:hover{
+        font-size:0.8em;
+    }
+}
+@media screen and (max-width:900px)
+{
+    header>a{
+        font-size:0.9em
+    }
+    header>a>img {
+        display: none;
+    }
+}
+@media screen and (max-width:768px){
+    nav>a{
+        font-size: 1em;
+    }
+    header{
+        font-size: 1.2em;
+    }
+    #i-love-it{
+        display: none;
+    }
+    .merch-item {
+        width: 25em;
+    }
+    a>#order-online{
+        width: 25vw;
+        float: left;
+    }
+}
+@media screen and (max-width:705px){
+    nav>a{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width:412px)
+{
+    #footer-hrefs {
+        font-size: larger;
+    }
+    section>a {
+        margin-inline: 1em;
+        width: 80%;
+    }
+    #image-cont {
+        margin-top: 5em;
+        margin-left: 15em;
+    }
+    #item-name{
+        font-size: 1.2em;
+    }
+    #item-name-price{
+        margin-block: 2em;
+        margin-inline: 1em;
+        width: 90%;
+    }
+    #img-and-description{
+        height: fit-content;
+    }
+    #image-cont{
+        height: 15em;
+    }
+    #item{
+        flex-direction: column;
+    }
+}

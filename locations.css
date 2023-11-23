@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: fit-content;
+}
+#current-menu-element{
+    color:rgb(221, 95, 95);
+}
+header>a>.one-elem:hover{
+    color:rgb(221, 95, 95);
+    transition: all .5s ease;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    height:fit-content;
+    padding-bottom: 5em;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: x-large;
+    align-items: center;
+    width: 100%;
+    height:6em;
+    color:white;
+    background-color: rgb(13,69,8);
+}
+#maomi-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#i-love-it{
+    letter-spacing: 0.2em;
+    font-size: 0.4em;
+    text-align: center;
+}
+#i-love-it img{
+    width:1em;
+    margin-top: 0.2em;
+    margin-right: 0.2em;
+}
+#maomi-text+a{
+    height: 30%;
+}
+a>#order-online{
+    height: 100%;
+    width: 15vw;
+    display: flex;
+    margin-left: 4em;
+    justify-content: center;
+    border: 0.2em solid white;
+    align-items: center;
+    border-radius: 5em;
+}
+a>#order-online:hover{
+    background-color: white;
+    transition: all .5s ease;
+    cursor: pointer;
+    color:rgb(190, 65, 65);
+    font-weight: bold;
+    font-size: 0.9em;
+}
+header>a>img{
+    width:2em;
+}
+footer>#footer-socials>a>img{
+    width:4em;
+}
+nav{
+    display: flex;
+    position: sticky;
+    z-index: 2;
+    top:0;
+    margin-top: 3em;
+    justify-content: space-evenly;
+    align-self: center;
+    width: 100vw;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav>a{
+    width:9em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border:0.1em solid green;
+    font-weight: bold;
+    font-size: 1.1em;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    color: green;
+    background-color: white;
+    border-radius: 1em;
+}
+nav>a:hover{
+    background-color: green;
+    color: white;
+    transition: all .5s ease;
+}
+#location-container{
+ display: flex;
+ justify-content: space-around;
+  margin-top: 2em;
+}
+.one-location{
+    border:0.3em inset black ;
+    width:29em;
+    height: 26.3em;
+    transition: background-image 1s ease;
+}
+#location-container > a:nth-child(1) .one-location {
+    background-image: url('maomi-city.jpg');
+    background-size: cover;
+}
+
+#location-container > a:nth-child(1):hover .one-location {
+    background-image: url('maomi-city-maps.jpg');
+    background-size: auto;
+}
+#location-container > a:nth-child(2) .one-location {
+    background-image: url('maomi-poscot.jpg');
+    background-position:left;
+    background-size: contain;
+}
+
+#location-container > a:nth-child(2):hover .one-location {
+    background-image: url('maomi-poscot-maps.jpg');
+    background-size: auto;
+}
+.one-location img{
+    width: 100%;
+    height: 100%;
+}
+#addresses{
+    display: flex;
+    justify-content: space-evenly;
+    height: fit-content;
+    margin-top: 2em;
+    color:black;
+    font-style: italic;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+}
+footer{
+    height: fit-content;
+    line-height: 5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    width: 100%;
+    color:white;
+    background-color: rgb(13,69,8);
+}
+#footer-hrefs{
+    font-size: xx-large;
+}
+#footer-hrefs,#footer-rules,#footer-socials{
+    display: flex;
+    justify-content: space-evenly;
+}
+#footer-rules{
+    font-size: small;
+}
+@media screen and (max-width:1200px){
+    a>#order-online{
+        font-size: 0.7em;
+        height: 80%;
+    }
+    a>#order-online:hover{
+        font-size:0.8em
+    }
+}
+@media  screen and (max-width:1024px) {
+}
+@media screen and (max-width:900px)
+{
+    header>a{
+        font-size:0.9em
+    }
+    header>a>img {
+        display: none;
+    }
+}
+@media screen and (max-width:768px){
+    nav>a{
+        font-size: 1em;
+    }
+    header{
+        font-size: 1.2em;
+    }
+    #i-love-it{
+        display: none;
+    }
+    a>#order-online{
+        width: 25vw;
+        float: left;
+    }
+}
+@media screen and (max-width:705px){
+    nav>a{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width:412px)
+{
+    #footer-hrefs {
+        font-size: larger;
+    }
+    #location-container{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .one-location{
+        margin-block: 2em;
+    }
+    #addresses{
+        display:none;
+    }
+}
